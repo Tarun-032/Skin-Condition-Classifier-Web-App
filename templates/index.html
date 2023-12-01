@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Selfcare</title>
+</head>
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo">
+    </div>
+    
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/analyze">Calculate</a></li>
+        <li><a href="/facts">Facts</a></li>
+    </ul>
+</nav>
+<body>
+   
+   
+    <!-- Content Section -->
+    <div class="content-container">
+        <div class="content-left">
+            <h1>Predict Skin Condition<br> with Ease</h1>
+            <p>A Simple web based machine learning model which helps you identify you skin condition by providing simple and quick little details. Predicts the class of the skin disease you might have.</p>
+            <a href="/analyze" class="cta-button">Get Started</a>
+        </div>
+        
+        <div class="content-right">
+            <img src="{{ url_for('static', filename='images/img5.png') }}" alt="Your Image">
+        </div>
+    </div>
+
+     <div class="content-container1">
+        <div class="content-right1">
+            <img src="{{ url_for('static', filename='images/img3.png') }}" alt="Your Image">
+        </div>
+        
+        <div class="content-left1">
+            <h1>Powerful Machine learning Algorithm</h1>
+            <p style="margin-right: 20px;">Machine learning plays a pivotal role in analyzing dermatological data to predict skin conditions. Through data preprocessing and feature selection, a Random Forest model is trained to learn patterns and relationships within the data. This model is then integrated into a web-based interface using Flask, allowing users to input features related to skin conditions. The machine learning model processes these inputs and provides predictions on likely skin conditions, offering users valuable insights into dermatological concerns. Through this web interface, users can conveniently access the predictive capabilities of the machine learning model for skin condition analysis.
+            </p>
+        </div>
+    </div>
+    <h1 class="imageheader">Different classes of Skin conditions</h1>
+    <div class="container">
+        
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Psoriasis.jpg') }}" alt="Image 1">
+            <h3>Class 1: Psoriasis</h3>
+            <p>Psoriasis is a chronic skin condition characterized by red, itchy, and scaly patches on the skin.</p>
+        </div>
+    
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Seborrheic Dermatitis.jpg') }}" alt="Image 2">
+            <h3>Class 2: Seborrheic Dermatitis</h3>
+            <p>Seborrheic dermatitis is a common skin condition that causes redness, scaly patches, and dandruff. It often affects the scalp but can also appear on other oily areas of the body.</p>
+        </div>
+    
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Lichen Planus.jpg') }}" alt="Image 3">
+            <h3>Class 3: Lichen Planus</h3>
+            <p>Lichen planus is an inflammatory skin condition that can cause an itchy rash, as well as white, lacy, raised areas on the skin.</p>
+        </div>
+        
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Pityriasis Rosea.jpg') }}" alt="Image 4">
+            <h3>Class 4: Pityriasis Rosea</h3>
+            <p>Pityriasis rosea is a benign skin rash that usually starts with a distinctive large, scaly, pink patch on the chest or back, followed by similar, smaller patches elsewhere on the body.</p>
+        </div>
+    
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Chronic Dermatitis.jpg') }}" alt="Image 5">
+            <h3>Class 5: Chronic Dermatitis</h3>
+            <p>Chronic dermatitis refers to long-term inflammation of the skin, which can result in redness, itching, and other skin changes.</p>
+        </div>
+    
+        <div class="image-card">
+            <img src="{{ url_for('static', filename='images/Pityriasis Rubra Pilaris.jpg') }}" alt="Image 6">
+            <h3>Class 6: Pityriasis Rubra Pilaris</h3>
+            <p>Pityriasis rubra pilaris is a rare skin disorder characterized by orange-red scaling plaques and keratotic follicular papules.</p>
+        </div>
+    </div>
+
+    <div class="content-container2">
+        <div class="content-left">
+            <h1>Chat with our AI Powered Assistant</h1>
+            <p>Use this AI chatbot to talk about your dermatological conditions with accuracy and hassle free. Ask any skin related questions and the assistant will help you out anytime anywhere.</p>
+            <a href="input" class="cta-button">Start a Convo</a>
+        </div>
+        
+        <div class="content-right">
+            <img src="{{ url_for('static', filename='images/img6.png') }}" alt="Your Image">
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Content</h3>
+            <ul>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Support</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+    </footer>
+    
+    <footer class="fot">
+            <p style="align-items: center;">&copy; 2023 Selfcare</p>
+        </footer>
+</body>
+</html>

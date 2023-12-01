@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Your Web App</title>
+</head>
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo">
+    </div>
+    
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="Analyze.html">Calculate</a></li>
+        <li><a href="/facts">Facts</a></li>
+    </ul>
+</nav>
+<body>
+    <section id="form" class="sectioncentered">
+                
+        <div class="left-section">
+            <img src="{{ url_for('static', filename='images/7108455.jpg') }}" alt="Image">
+            
+            <p class="guidelines">Follow these guidelines for accurate predictions:</p>
+            <ul class="guidelines-list">
+                <li>Input accurate and honest information about your skin condition symptoms.</li>
+                <li>Ensure no field is left empty for a comprehensive prediction.</li>
+                <li>Stick to the observed ranges for each input.</li>
+                <li>The Model is around 70% accurate so be careful.</li>
+            </ul>
+        </div>
+    <div class="right-section">
+        <h2>Enter Parameters</h2>
+        <br>
+        
+        <form id="input-form" action="/predict" method="post">
+
+            <label for="erythema">Erythema (Redness of skin):</label>
+        <select id="erythema" name="erythema">
+            <option value="0">None</option>
+            <option value="1">Mild</option>
+            <option value="2">Moderate</option>
+            <option value="3">Severe</option>
+        </select>
+
+        <label for="scaling">Scaling:</label>
+        <select id="scaling" name="scaling">
+            <option value="0">None</option>
+            <option value="1">Moderate</option>
+            <option value="2">Severe</option>
+        </select>
+
+        <label for="definiteBorders">Definite Borders:</label>
+        <select id="definiteBorders" name="definiteBorders">
+            <option value="0">None</option>
+            <option value="1">Mild</option>
+            <option value="2">Moderate</option>
+            <option value="3">Severe</option>
+        </select>
+
+        <label for="Itching">Itching:</label>
+        <select id="Itching" name="Itching">
+            <option value="0">None</option>
+            <option value="1">Mild</option>
+            <option value="2">Moderate</option>
+            <option value="3">Severe</option>
+        </select>
+
+        <label for="koebnerPhenomenon">Koebner Phenomenon (skin lesions):</label>
+        <select id="koebnerPhenomenon" name="koebnerPhenomenon">
+            <option value="0">Absence</option>
+            <option value="3">Presence</option>
+        </select>
+
+        <label for="familyHistory">Family History:</label>
+        <select id="familyHistory" name="familyHistory">
+            <option value="0">Absence</option>
+            <option value="1">Presence</option>
+            
+        </select>
+
+            <input id="sub" type="submit" value="Predict">
+
+        </form>
+
+    </div>
+    </section>
+
+    <footer>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Content</h3>
+            <ul>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Support</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+    </footer>
+    
+    <footer class="fot">
+            <p style="align-items: center;">&copy; 2023 Selfcare</p>
+        </footer>
+</body>

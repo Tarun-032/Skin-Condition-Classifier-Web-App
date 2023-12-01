@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .content-right1 img{
+            padding-left: 50px;
+        }
+
+        .content-left1 {
+            margin-top: 0%;
+        }
+    </style>
+    <!-- Link to the static CSS file -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Your Web App</title>
+</head>
+<nav>
+    <div class="logo">
+        <img src="{{ url_for('static', filename='images/logo.jpg') }}" alt="Logo">
+    </div>
+    
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/analyze">Calculate</a></li>
+        <li><a href="/facts">Facts</a></li>
+    </ul>
+</nav>
+
+<body>
+    <div class="content-container">
+        <div class="content-left">
+            <h1>Psoriasis</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>Psoriasis is a chronic autoimmune condition.</li>
+                <li>It often results in red, itchy, and scaly patches on the skin.</li>
+                <li>Trigger factors include stress, infections, and certain medications.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Moisturize regularly</li>
+                <li>Use medicated creams as prescribed.</li>
+                <li>Manage stress through relaxation techniques.</li>
+            </ul>
+    
+        </div>
+        
+        <div class="content-right">
+            <img src="{{ url_for('static', filename='images/Psoriasis.jpg') }}" alt="Your Image" style="width: 70%;">
+        </div>
+    </div>
+
+     <div class="content-container1">
+        <div class="content-right1">
+            <img src="{{ url_for('static', filename='images/Seborrheic Dermatitis.jpg') }}" alt="Your Image"style="width: 70%;">
+        </div>
+        
+        <div class="content-left1">
+            <h1>Seborrheic Dermatitis</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>Commonly known as dandruff when it affects the scalp.</li>
+                <li>Causes red, greasy skin covered with flaky white or yellow scales.</li>
+                <li>Linked to an overgrowth of a yeast called Malassezia.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Use medicated shampoos</li>
+                <li>Avoid harsh soaps and detergents.</li>
+                <li>Apply anti-fungal creams as directed.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="content-left">
+            <h1>Lichen Planus</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>An inflammatory condition that affects the skin, mucous membranes, and nails.</li>
+                <li>Characterized by purplish, flat-topped bumps.</li>
+                <li>The exact cause is often unknown.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Topical corticosteroids for skin lesions.</li>
+                <li>Antihistamines for itching.</li>
+                <li>Avoid triggers like certain medications.</li>
+            </ul>
+    
+        </div>
+        
+        <div class="content-right">
+            <img src="{{ url_for('static', filename='images/Lichen Planus.jpg') }}" alt="Your Image" style="width: 65%;">
+        </div>
+    </div>
+
+     <div class="content-container1">
+        <div class="content-right1">
+            <img src="{{ url_for('static', filename='images/Pityriasis Rosea.jpg') }}" alt="Your Image" style="width: 70%;">
+        </div>
+        
+        <div class="content-left1">
+            <h1>Pityriasis Rosea</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>Common skin rash that usually begins with a single, large patch.</li>
+                <li>Followed by the appearance of smaller lesions in a "Christmas tree" pattern.</li>
+                <li>Believed to be caused by a viral infection.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Over-the-counter antihistamines for itching.</li>
+                <li>UV light exposure may help.</li>
+                <li>Keep skin moisturized.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+
+    <div class="content-container">
+        <div class="content-left">
+            <h1>Chronic Dermatitis</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>Inflammation of the skin that persists over a long time.</li>
+                <li>Itchy, red skin that may thicken over time.</li>
+                <li>Multiple causes, including genetics and environmental factors.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Identify and avoid triggers.</li>
+                <li>Topical corticosteroids for inflammation.</li>
+                <li>keep skin hydrated</li>
+            </ul>
+    
+        </div>
+        
+        <div class="content-right">
+            <img src="{{ url_for('static', filename='images/Chronic Dermatitis.jpg') }}" alt="Your Image" style="width: 70%;">
+        </div>
+    </div>
+
+     <div class="content-container1">
+        <div class="content-right1">
+            <img src="{{ url_for('static', filename='images/Pityriasis Rubra Pilaris.jpg') }}" alt="Your Image" style="width: 70%;">
+        </div>
+        
+        <div class="content-left1">
+            <h1>Pityriasis Rubra Pilaris</h1>
+            <h4> Facts </h4>
+            <ul>
+                <li>Rare skin disorder characterized by orange-red scaling plaques and keratotic follicular papules.</li>
+                <li>Often starts on the head and neck and may spread to the trunk and limbs.</li>
+                <li>The cause is unknown, but it is believed to involve genetic factors.</li>
+            </ul>
+            <h4>Remedies</h4>
+            <ul>
+                <li>Treatment may involve topical steroids.</li>
+                <li>Emollients to soothe dry skin.</li>
+                <li>Consultation with a dermatologist for specialized care.</li>
+            </ul>
+            
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Our Team</li>
+                <li>Careers</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Privacy</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Terms of Service</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Social Media</h3>
+            <ul>
+                <li>Facebook</li>
+                <li>Twitter</li>
+                <li>Instagram</li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Content</h3>
+            <ul>
+                <li>Blog</li>
+                <li>FAQ</li>
+                <li>Support</li>
+                <li>Feedback</li>
+            </ul>
+        </div>
+    </footer>
+    
+    <footer class="fot">
+            <p style="align-items: center;">&copy; 2023 Selfcare</p>
+        </footer>
+</body>
